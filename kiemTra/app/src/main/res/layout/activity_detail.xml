@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    tools:context=".Detail">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#C5C5C5"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgHinh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Có giá trị đến:"
+                    android:textSize="7dp"
+                    android:textColor="#0022FF"
+                    />
+                <TextView
+                    android:id="@+id/txtgiatriden"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="dd/mm/yyyy"
+                    android:textSize="9dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CỘNG HÒA XÃ HỘI CHỦ NGHĨ VIỆT NAM"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Độc lập - Tự do - Hạnh phúc"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CĂN CƯỚC CÔNG DÂN"
+                android:textSize="20dp"
+                android:textColor="#FB0303"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="Số:"
+                    android:textColor="#0238FD"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    />
+                <TextView
+                    android:id="@+id/txtsCMND"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Số cmnd"
+                    android:textColor="#FD0202"
+                    android:textStyle="italic"
+                    android:layout_marginRight="10dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                tools:ignore="Orientation">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Họ và tên:"
+                    android:textColor="#0238FF"
+                    />
+                <TextView
+                    android:id="@+id/txtten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="name"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                tools:ignore="Orientation">
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày tháng năm sinh:"
+                    android:textColor="#0238FF"
+                    />
+                <TextView
+                    android:id="@+id/txtngaysinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="date"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="Orientation">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="Giới tính:"
+                    android:textColor="#0238FF"
+                    />
+                <TextView
+                    android:id="@+id/txtsex"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:hint="sex"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Quốc tịch:"
+                    android:textColor="#0238FF"
+                    />
+                <TextView
+                    android:id="@+id/txtquoctich"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="National"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Quê quán:"
+                    android:textColor="#0238FD"
+                    />
+                <TextView
+                    android:id="@+id/txtque"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Home town"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nơi thường trú:"
+                    android:textColor="#0238FD"
+                    />
+                <TextView
+                    android:id="@+id/txtnoiThuongChu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="place of residence"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back" ></Button>
+
+
+</LinearLayout>
